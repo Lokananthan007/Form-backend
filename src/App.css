@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#table{
+    max-width: 100%;
+    min-height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#table .header{
+    width: 100%;
+    min-height: 80px;
+    background-color: rgb(181, 247, 237);
+    position: relative;
+}
+#table .header h1{
+    display: inline-block;
+}
+#table .upbtn{
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid rgb(72, 255, 0);
+}
+#table .delbtn{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid rgb(255, 0, 0);
+}
+.delbtn:hover{
+    background-color: rgb(255, 133, 88);
+}
+.upbtn:hover{
+    background-color: rgb(255, 192, 110);
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #000000;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .styled-table th {
+    background-color: #daffa5;
   }
-}
